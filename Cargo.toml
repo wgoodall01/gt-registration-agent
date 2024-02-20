@@ -1,0 +1,14 @@
+[package]
+name = "reg-agent"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-openai = "0.12.1"
+clap = { version = "4.5.1", features = ["derive"] }
+eyre = "0.6.12"
+indoc = "2.0.4"
+sqlx = { version = "0.7.3", features = ["runtime-tokio", "sqlite"] }
+term-table = "1.3.2"
+tokio = { version = "1.36.0", features = ["rt", "full"] }
+tokio-stream = { version = "0.1.14", features = ["full"] }
